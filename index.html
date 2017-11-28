@@ -36,10 +36,11 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
-           function message(){
-		   var textentry=document.getElementbyId("entryinput").value;
-		   alert("Randall Courtney: "+textentry);
-		   document.getElementbyId("textoutput").innerHTML=textentry;
+		document=getElementbyId("entrybutton").addEventListener("click", myMessage)
+           function mymessage(){
+		   var message=document.getElementbyId("entryinput").value;
+		   alert("Randall Courtney: "+message);
+		   document.getElementbyId("textoutput").innerHTML=message;
 		   }
 	</script>
 </body>
